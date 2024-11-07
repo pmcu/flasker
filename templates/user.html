@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    {% extends "base.html" %}
+    
+    {% block content %}
     <h1>Hello {{ name | capitalize }}</h1>
+    {% endblock %}
 </body>
 </html>

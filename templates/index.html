@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+
+    {% extends "base.html" %}
+    
+    {% block content %}
+    <div class="container">
     <h1>A Web Site</h1>
     <p>This is a first web page and tae</p>
     <p>Is maith an rud an tae gach lá</p>
@@ -22,8 +27,8 @@
     {% endif%}
 
  {% endfor%}
- <br/>
- <br/>
- {{ top_feeds.1 }}
+
+ {% endblock %}
+</div>
 </body>
 </html>
